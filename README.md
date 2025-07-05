@@ -104,7 +104,7 @@ You can open multiple client instances to simulate multiple users chatting in a 
 
 📦 Sample Output:
 
-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/754d821e-7bae-4dff-a3e5-06145a922adc" />
 
 
 🌱 Future Improvements:
