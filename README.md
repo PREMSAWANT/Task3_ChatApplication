@@ -1,15 +1,24 @@
 # Task 3: Multithreaded Chat Application - Study Group Chat
 
+
 JAVA-PROGRAMMING-TASK
+
 COMPANY: CODTECH IT SOLUTIONS PVT. LTD
+
 NAME: PREM ANANDRAO SAWANT
+
 INTERN ID: CT04DH1720
+
 DOMAIN: JAVA PROGRAMMING
+
 DURATION: 4 WEEKS (5th July 2025 to 5th August 2025)
+
 MENTOR: NEELA SANTHOSH
 
 📌 Task 3: Java Chat Application – Client-Server Real-Time Messaging
+
 📝 Description of the Task:
+
 This task required the development of a console-based chat application in Java using Socket Programming. The project simulates a basic messaging platform with multiple clients connected to a central server, enabling real-time group chat functionality over a local network.
 
 The system consists of two major components:
@@ -21,6 +30,7 @@ ChatClient.java – The client interface that users run to join the chat.
 This application closely models how real-world chat systems function at the network layer and demonstrates important communication protocols in action.
 
 💡 What I Learned:
+
 From this task, I learned a lot about:
 
 Socket programming in Java using Socket and ServerSocket classes
@@ -36,6 +46,7 @@ Building interactive command-line communication interfaces
 This task enhanced my understanding of how scalable backend communication systems are built using basic Java features without relying on external frameworks.
 
 🛠 Technologies Used:
+
 Java Sockets (java.net)
 
 Input/Output Streams (BufferedReader, PrintWriter, InputStreamReader)
@@ -45,6 +56,7 @@ Multithreading (Runnable interface and Thread class)
 Localhost Networking (TCP-based)
 
 🔍 Features Implemented:
+
 Server Setup: A chat server that runs on a specified port (e.g., 12345) and listens for client connections.
 
 Multiple Client Handling: Uses threads to support multiple users chatting simultaneously.
@@ -58,6 +70,7 @@ Live Message Exchange: Supports dynamic, real-time chatting across clients.
 Graceful Exit Support: When a user closes the client window, it disconnects without crashing the server.
 
 🧠 Code Explanation:
+
 ChatServer.java starts a ServerSocket on port 12345 and waits for clients to connect. Each client connection is handed off to a new ClientHandler thread, which listens for incoming messages and sends them to all other connected clients using a shared list of output streams.
 
 ChatClient.java connects to the server, asks the user for their name, and starts two threads:
@@ -71,6 +84,7 @@ All data transmission is text-based, and the communication is achieved using sta
 The screenshot shows the smooth flow of a chat conversation where users like "Prem" and "Ankita" are exchanging real-time messages successfully.
 
 ⚠️ Challenges Faced:
+
 Handling multiple clients simultaneously was a new concept for me. Implementing multithreading was essential to allow concurrent conversations without blocking the server.
 
 Another challenge was making sure message broadcasting didn’t result in duplicate outputs or missing messages. I had to carefully manage the list of client writers to ensure synchronized communication.
@@ -108,6 +122,7 @@ You can open multiple client instances to simulate multiple users chatting in a 
 
 
 🌱 Future Improvements:
+
 Implement private messaging using recipient selection
 
 Add GUI using JavaFX or Swing
@@ -119,6 +134,7 @@ Add login authentication for users
 Improve scalability for larger group chats
 
 ✅ Conclusion:
+
 This task offered an eye-opening experience in building real-time communication systems using basic Java. I learned the core principles behind chat applications, including socket communication, client-server logic, and multithreading. It provided an excellent foundation for more advanced projects like multiplayer games, collaborative tools, or scalable messaging services.
 
 I now feel confident in setting up and managing socket-based applications and truly appreciate how underlying network communication works in professional software systems.
